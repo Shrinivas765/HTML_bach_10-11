@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        #header{
+            background-color: #383d45;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            /* background-color: red;
+            color: salmon; */
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        #nav{
+            background-color: rgb(235, 225, 235);
+            width: 30%;
+            height: 350px;
+            text-align: center;
+        }
+        #article{
+            background-color: rgba(190, 146, 167, 0.781);
+            width: 70%;
+            height: 350px;
+        }
+        ul{
+            margin-top: 50px;
+            list-style: none;
+        }
+        li{
+            margin: 10px;
+
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+        }
+        h2{
+            text-align: center;
+            margin: 15px 0px;
+        }
+        p{
+            margin: 0px 50px;
+        }
+        .footer{
+            background-color:#383d45 ;
+            color: white;
+        
+        }
+        .footer h1{
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Wel come in header section</h1>
+    </div>
+    <div style="display: flex;">
+        <div id="nav">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div id="article">
+            <h2>Wel come in website</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde modi deleniti quo quasi nostrum, 
+                molestiae iure aliquam sit facilis, fugit autem? Dolorum aut alias veritatis velit, vel repudiandae totam sint.</p>
+        </div>
+    </div>
+    <div class="footer">
+<h1>This is the footer</h1>
+    </div>
+</body>
+
+</html>

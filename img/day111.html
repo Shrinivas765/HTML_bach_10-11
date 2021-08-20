@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>table tag</title>
+        <style>
+            table,th,td{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            td{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" id="name">
+        <table width="100%">
+            <caption style="color: rgb(180, 51, 51);"><span id="sname"></span>Student Mark</caption>
+           <tr>
+               <th>Subject</th>
+               <th>out of marks</th>
+               <th>Obtained marks</th>
+           </tr>
+           <tr>
+               <td>Computer</td>
+           <td>100</td>
+           <td>95</td>
+           </tr>
+           <tr>
+            <td>C A</td>
+        <td>100</td>
+        <td id="ca">55</td>
+        </tr>
+        <tr>
+            <td colspan="2">Total</td>
+            <td id="totalmark">total 150</td>
+        </tr>
+        <tr>
+            <td colspan="2">Percentage</td>
+            <td id="totalper">total 150</td>
+        </tr>
+           
+        </table>
+        <button type="submit" onclick="functionSubmit()">submit</button>
+        <script>
+function functionSubmit (){
+    var name = document.getElementById("name").value;
+    console.log(name)
+
+    var sub1 = 95
+            console.log(sub1)
+            var sub2 = 55;
+        total=sub1 + sub2
+        console.log(total)
+        per = (total / 200)*100;
+console.log(per)
+
+document.getElementById('totalmark').innerHTML = total;
+document.getElementById('totalper').innerHTML = per;
+document.getElementById("sname").innerHTML = name;
+}
+
+           
+        </script>
+    </body>
+</html>
