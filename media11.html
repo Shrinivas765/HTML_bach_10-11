@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100%;
+            height: 800px;
+        }
+        p{
+            background-color: green;
+            padding: 50px;
+        }
+        /* small phone */
+        @media only screen and (max-width:600px)
+        {
+            img{
+                width: 100%;
+                /* height: 300px; */
+            }
+            p{
+            background-color: rgb(38, 0, 128);
+            padding: 50px;
+        }
+        }
+        /* large phone */
+        @media only screen and (min-width:600px)
+        {
+            img{
+                width: 100%;
+                height: 449px;
+            }
+            p{
+            background-color: rgb(128, 41, 0);
+            padding: 50px;
+        }
+        /* landscape tablet */
+        @media only screen and (min-width:768px)
+        {
+            img{
+                width: 100%;
+                /* height: 300px; */
+            }
+            p{
+            background-color: rgb(241, 81, 148);
+            padding: 50px;
+        }
+        /* laptop/desktop */
+        @media only screen and (min-width:992px)
+        {
+            img{
+                width: 100%;
+                /* height: 300px; */
+            }
+            p{
+            background-color: rgb(199, 240, 16);
+            padding: 50px;
+        }
+        /* extra large laptop / desktop */
+        @media only screen and (min-width:1200px)
+        {
+            img{
+                width: 100%;
+                /* height: 300px; */
+            }
+            p{
+            background-color: rgb(20, 169, 228);
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <img src="./img/bg2.jpg">
+    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, voluptatibus! Placeat beatae deleniti non nihil quis vel tenetur, hic alias neque sequi quidem eaque ea illo saepe, earum nostrum omnis?</p>
+</body>
+</html>
